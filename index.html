@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: rgb(84, 84, 223)">
+    <form method="post">
+      <fieldset>
+        <legend style="background-color: rgb(125, 125, 236)">
+          Personal Data
+        </legend>
+        <fieldset style="background-color: rgb(36, 105, 105)">
+          <legend
+            style="background-color: rgb(125, 125, 236); padding: 25px 0 25px"
+          >
+            Your Name
+          </legend>
+          <label for="firstname">FirstName :</label>
+          <input
+            type="text"
+            placeholder="enter your FirstName"
+            id="firstname"
+            name="firstName"
+          />
+          <br />
+          <br />
+          <label for="lastname">LastName :</label>
+          <input
+            type="text"
+            placeholder="enter your LastName"
+            id="lastname"
+            name="lastName"
+          />
+        </fieldset>
+        <br />
+        <br />
+        <label for="number">Number :</label>
+        <input
+          type="tel"
+          placeholder="enter your Number"
+          id="number"
+          name="number"
+        />
+        <br />
+        <br />
+        <label for="email">Email :</label>
+        <input
+          type="email"
+          placeholder="enter your Email"
+          id="email"
+          name="email"
+        />
+        <br />
+        <br />
+        <label for="password">Password :</label>
+        <input
+          type="password"
+          placeholder="enter your Password"
+          id="password"
+          name="password"
+        />
+        <br />
+        <br />
+        <label for="re-password">Re-Password :</label>
+        <input
+          type="password"
+          placeholder="re-enter your Password"
+          id="re-password"
+          name="re-password"
+        />
+        <br />
+        <br />
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <br />
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+        <br />
+        <br />
+        <input type="checkbox" name="status" id="grad" />
+        <label for="grad">Graduated</label>
+        <br />
+        <input type="checkbox" name="stats" id="stu" />
+        <label for="stu">Student</label>
+        <br />
+        <br />
+        <label for="univercity">Univercity</label>
+        <input list="univercitys" name="univercity" id="univercity" />
+        <datalist id="univercitys">
+          <option value="SHA"></option>
+          <option value="BUE"></option>
+          <option value="AUE"></option>
+        </datalist>
+      </fieldset>
+    </form>
+  </body>
+</html>
